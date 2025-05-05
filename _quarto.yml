@@ -1,0 +1,64 @@
+project:
+  type: book
+
+lightbox: true
+
+book:
+  title: "源氏物語"
+  author: "紫式部（与謝野晶子訳）"
+  translator: "与謝野晶子"
+  version: 0.1
+  search: true
+  date: "2025/5/2"
+  sharing: [twitter, facebook]
+#  favicon: favicon.ico
+#  cover-image: ./image/favicon_small.png
+  site-url: https://www.aozora.gr.jp/cards/000052/files/5020_11254.html
+  
+#  google-analytics: "G-XXXXXXXXX"
+  
+  page-navigation: true
+  back-to-top-navigation: true
+  
+  page-footer:
+    right: |
+      <a href="https://quarto.org/">Quarto</a>を用いてこの本を作成しました
+    left: |
+      <a href="https://www.aozora.gr.jp/guide/kijyunn.html">青空文庫</a>のファイル取り扱い規準に則り作成しました
+
+  sidebar:
+    style: docked
+    background: light
+
+  chapters:
+    - index.qmd
+    - part: "若紫"
+      chapters: 
+      - chapter1.qmd
+      - chapter2.qmd
+      - chapter3.qmd
+      - chapter4.qmd
+      - chapter5.qmd
+      - chapter6.qmd
+      - chapter7.qmd
+      - chapter8.qmd
+      - chapter9.qmd
+      - chapter10.qmd
+      - chapter11.qmd
+      - chapter12.qmd
+      - chapter13.qmd
+      - eod.qmd
+
+format:
+  html:
+    theme: 
+      light: united
+      dark: cyborg
+    toc: true
+    toc-depth: 4
+    toc-expand: 2
+#    code-tools: true
+#    code-block-bg: true
+#    code-block-border-left: "#31BAE9"
+
+editor: source
